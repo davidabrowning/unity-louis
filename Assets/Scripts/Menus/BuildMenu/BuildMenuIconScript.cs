@@ -19,6 +19,9 @@ namespace FarmerDemo
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            if (PlayerScript.Instance.HasInInventory(CostCalculator.GetItemCosts(BuildingData.ItemType)))
+                ConstructionManagerScript.Instance.TryEnterBuildMode(BuildingData);
+
             BuildCommandIcon.GetComponent<Image>().sprite = IconDictionary.GetIconSprite(BuildingData.ItemType);
             BuildCommandIcon.GetComponent<Button>().onClick.RemoveAllListeners();
             BuildCommandIcon.GetComponent<Button>().onClick.AddListener(() =>

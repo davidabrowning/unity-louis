@@ -63,3 +63,7 @@ MonoBehaviour:
     IconSprite: {fileID: 21300000, guid: 1610bf415eda4a14499dd1e6f7849434, type: 3}
   - ItemType: 25
     IconSprite: {fileID: 21300000, guid: 69a21bb6bb42bf24ca8bb2930d5ee2b7, type: 3}
+  - ItemType: 25
+    IconSprite: {fileID: 21300000, guid: 69a21bb6bb42bf24ca8bb2930d5ee2b7, type: 3}
+  - ItemType: 26
+    IconSprite: {fileID: 21300000, guid: a4a2fcabae770414e96bb3ab0390efbe, type: 3}

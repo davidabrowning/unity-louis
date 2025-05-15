@@ -23,7 +23,11 @@ namespace FarmerDemo
                 if (Input.GetMouseButtonDown(0)) // left-click
                 {
                     TryBuildAndRemoveResources(targetTiles);
-                    ExitBuildMode();
+                }
+
+                if (Input.GetMouseButton(0)) // left-click drag
+                {
+                    TryBuildAndRemoveResources(targetTiles);
                 }
             }
         }

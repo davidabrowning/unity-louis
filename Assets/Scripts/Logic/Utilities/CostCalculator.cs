@@ -29,6 +29,8 @@ namespace FarmerDemo
             // Buildings
             switch (itemType)
             {
+                case ItemType.Road:
+                    return new() { new ResourceAmount(ItemType.Stone, 1) };
                 case ItemType.Fabricator:
                     return new() { new ResourceAmount(ItemType.Twig, 1), new ResourceAmount(ItemType.Stone, 1) };
                 case ItemType.Lab:

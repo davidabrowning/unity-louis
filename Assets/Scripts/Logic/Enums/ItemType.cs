@@ -34,5 +34,6 @@ namespace FarmerDemo
         Twig,
         Wheat,
         WoodBurner,
+        Road,
     }
 }

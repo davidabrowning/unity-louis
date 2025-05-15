@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,7 +21,7 @@ namespace FarmerDemo
         {
             base.Awake();
             PopulateBuildMenu();
-            HideAdvancedBuildingInventorySlots();
+            ShowAdvancedBuildings();
         }
 
         private void PopulateBuildMenu()
@@ -30,6 +31,7 @@ namespace FarmerDemo
                 GameObject buildButton = Instantiate(BuildButtonPrefab);
                 buildButton.GetComponent<Image>().sprite = IconDictionary.GetIconSprite(building.ItemType);
                 buildButton.transform.SetParent(BuildGridPanel.transform, false);
+                buildButton.SetActive(false);
                 _buildButtons.Add(buildButton);
 
                 BuildMenuIconScript buildButtonScript = buildButton.GetComponent<BuildMenuIconScript>();
@@ -45,17 +47,12 @@ namespace FarmerDemo
             BuildCommandIcon.AddComponent<Button>();
         }
 
-        private void HideAdvancedBuildingInventorySlots()
-        {
-            for (int i = 1; i < _buildButtons.Count; i++)
-            {
-                _buildButtons[i].SetActive(false);
-            }
-        }
-
         public void ShowLabInventorySlot()
         {
-            _buildButtons[1].SetActive(true);
+            _buildButtons
+                .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.Lab)
+                .FirstOrDefault()
+                .SetActive(true);
         }
 
         public void ShowAdvancedBuildings()
@@ -63,18 +60,44 @@ namespace FarmerDemo
             switch (EraManagerScript.Instance.CurrentEra)
             {
                 case EraType.Survival:
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.Road)
+                        .FirstOrDefault()
+                        .SetActive(true);
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.Fabricator)
+                        .FirstOrDefault()
+                        .SetActive(true);
                     break;
                 case EraType.Power:
-                    _buildButtons[2].SetActive(true); // Wood burner
-                    _buildButtons[3].SetActive(true); // Circuit maker
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.WoodBurner)
+                        .FirstOrDefault()
+                        .SetActive(true);
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.CircuitMaker)
+                        .FirstOrDefault()
+                        .SetActive(true);
                     break;
                 case EraType.Automation:
-                    _buildButtons[4].SetActive(true); // Solar panel
-                    _buildButtons[5].SetActive(true); // AutoHarvester
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.SolarPanel)
+                        .FirstOrDefault()
+                        .SetActive(true);
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.AutoHarvester)
+                        .FirstOrDefault()
+                        .SetActive(true);
                     break;
                 case EraType.ScientificAdvancement:
-                    _buildButtons[6].SetActive(true); // SeedSplicer
-                    _buildButtons[7].SetActive(true); // ARM
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.SeedSplicer)
+                        .FirstOrDefault()
+                        .SetActive(true);
+                    _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.ARM)
+                        .FirstOrDefault()
+                        .SetActive(true);
                     break;
             }
         }
