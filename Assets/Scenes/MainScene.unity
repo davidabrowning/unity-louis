@@ -4938,7 +4938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResourceInventory: []
-  ActivePowerProducers: []
+  ActiveElectricityProducers: []
   MoveSpeed: 3
   HasBasket: 0
   HasPickaxe: 0
@@ -5660,6 +5660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IconDictionary: {fileID: 11400000, guid: 967d3f1b1deae35449749e19d84bbbfe, type: 2}
   AvailableBuildings:
+  - {fileID: 11400000, guid: f9f5ebe689580d94bae38d272b15cd1e, type: 2}
   - {fileID: 11400000, guid: 2df9be03b4a72fc49b447632ffc7f8a2, type: 2}
   - {fileID: 11400000, guid: 47ed4dd5b6891e7488de330caec737e7, type: 2}
   - {fileID: 11400000, guid: 6f70245f53ce28647be7ef2b78d05a53, type: 2}
