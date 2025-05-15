@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8b2d34c3e8605014a972d520bb61060e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ButtonPrefab: {fileID: 3981427300470758169, guid: 8bc378d17deb4aa4a98c78789ea777ca, type: 3}
+  - ButtonContainer: {fileID: 7615220244065380959, guid: e121c86d12a0f664297928587dea45fa, type: 3}
+  - CancelButton: {fileID: 2124903650014324407, guid: 00fe93e687de32745b5ea66042f0d252, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 870d8a583e82d4f4b9e04d0bf78852e7, type: 3}
+  m_Name: CircuitMaker
+  m_EditorClassIdentifier: 
+  ItemType: 8
+  ItemName: CircuitMaker
+  ItemDescription: CircuitMaker description
+  ItemIcon: {fileID: 21300000, guid: 5b20065e5228ca54d80ee44bc95b42a9, type: 3}
+  ItemPrefab: {fileID: 4546320004758154949, guid: 8220e05c5f68c944f827453bb7d73d57, type: 3}
+  Size: {x: 2, y: 2}

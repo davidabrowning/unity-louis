@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636e5ca4318381d42b6e2c1418eec05b, type: 3}
+  m_Name: IconDictionary
+  m_EditorClassIdentifier: 
+  ItemIconEntries:
+  - ItemType: 1
+    IconSprite: {fileID: 21300000, guid: 0a772c69e79c5c54ba7757be56e7c061, type: 3}
+  - ItemType: 2
+    IconSprite: {fileID: 21300000, guid: 6263fda45a045464f97c76220ee45c7d, type: 3}
+  - ItemType: 3
+    IconSprite: {fileID: 21300000, guid: c68f5726e338a484da5db0cbef7cb018, type: 3}
+  - ItemType: 4
+    IconSprite: {fileID: 21300000, guid: 5dcedfd15f4c7f545b4efd68c71db5b0, type: 3}
+  - ItemType: 5
+    IconSprite: {fileID: 0}
+  - ItemType: 6
+    IconSprite: {fileID: 21300000, guid: 285470175b588f8428dd675e99143587, type: 3}
+  - ItemType: 7
+    IconSprite: {fileID: 0}
+  - ItemType: 8
+    IconSprite: {fileID: 21300000, guid: 5b20065e5228ca54d80ee44bc95b42a9, type: 3}
+  - ItemType: 9
+    IconSprite: {fileID: 21300000, guid: 5fd4ed94a5e6e7141a39d82617a46aaf, type: 3}
+  - ItemType: 10
+    IconSprite: {fileID: 21300000, guid: 459fb6728873e514c98fe155df36724e, type: 3}
+  - ItemType: 11
+    IconSprite: {fileID: 21300000, guid: c660cb2242a9d0e4e977164cd712d88c, type: 3}
+  - ItemType: 12
+    IconSprite: {fileID: 21300000, guid: c660cb2242a9d0e4e977164cd712d88c, type: 3}
+  - ItemType: 13
+    IconSprite: {fileID: 21300000, guid: 3922aa57204377e49941fbf590a3474b, type: 3}
+  - ItemType: 14
+    IconSprite: {fileID: 21300000, guid: 35eab242f3369d34ca96e396ef11808b, type: 3}
+  - ItemType: 15
+    IconSprite: {fileID: 21300000, guid: 9f5b138531e25dc48a1f9729bf9a6517, type: 3}
+  - ItemType: 16
+    IconSprite: {fileID: 21300000, guid: c59f48e70d3066842a795a32484a901f, type: 3}
+  - ItemType: 17
+    IconSprite: {fileID: 21300000, guid: dd543320302419e4d954a6c8aa43bb62, type: 3}
+  - ItemType: 18
+    IconSprite: {fileID: 21300000, guid: 9f5b138531e25dc48a1f9729bf9a6517, type: 3}
+  - ItemType: 19
+    IconSprite: {fileID: 0}
+  - ItemType: 20
+    IconSprite: {fileID: 21300000, guid: a2a62a0ea65937747b11afd2c7d62d8e, type: 3}
+  - ItemType: 21
+    IconSprite: {fileID: 21300000, guid: a2a62a0ea65937747b11afd2c7d62d8e, type: 3}
+  - ItemType: 22
+    IconSprite: {fileID: 0}
+  - ItemType: 23
+    IconSprite: {fileID: 21300000, guid: e20f8518919188f4099d5e2eb707ad6c, type: 3}
+  - ItemType: 24
+    IconSprite: {fileID: 21300000, guid: 1610bf415eda4a14499dd1e6f7849434, type: 3}
+  - ItemType: 25
+    IconSprite: {fileID: 21300000, guid: 69a21bb6bb42bf24ca8bb2930d5ee2b7, type: 3}

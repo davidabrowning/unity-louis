@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b31f9a910042c0c4f98e3a808c8517df
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - TwigSprite: {fileID: 21300000, guid: e7e74373d5bc45843b3a932101def44e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
