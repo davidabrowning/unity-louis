@@ -45,13 +45,13 @@ namespace FarmerDemo
                 _animator.speed = 0.2f;
 
             // Temporary settings for testing/development
-            AddToInventory(ItemType.Twig, 100);
-            AddToInventory(ItemType.Berry, 1000);
-            AddToInventory(ItemType.Circuit, 100);
-            AddToInventory(ItemType.Iron, 100);
-            AddToInventory(ItemType.Stone, 100);
-            AddToInventory(ItemType.Fish, 1000);
-            AddToInventory(ItemType.Seed, 1000);
+            //AddToInventory(ItemType.Twig, 100);
+            //AddToInventory(ItemType.Berry, 1000);
+            //AddToInventory(ItemType.Circuit, 100);
+            //AddToInventory(ItemType.Iron, 100);
+            //AddToInventory(ItemType.Stone, 100);
+            //AddToInventory(ItemType.Fish, 1000);
+            //AddToInventory(ItemType.Seed, 1000);
         }
 
         void Update()

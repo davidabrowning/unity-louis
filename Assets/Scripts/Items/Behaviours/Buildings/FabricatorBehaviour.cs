@@ -39,6 +39,11 @@ namespace FarmerDemo
 
         private IEnumerator TryCraftBerryBasket()
         {
+            if (!PlayerScript.Instance.ElectricityIsOn)
+            {
+                DialogueManagerScript.Instance.ShowDialogue("The fabricator requires electricity!");
+                yield break;
+            }
             if (PlayerScript.Instance.HasInInventory(CostCalculator.GetItemCosts(ItemType.Basket)))
             {
                 PlayerScript.Instance.RemoveFromInventory(CostCalculator.GetItemCosts(ItemType.Basket));
@@ -59,6 +64,11 @@ namespace FarmerDemo
 
         private IEnumerator TryCraftPickaxe()
         {
+            if (!PlayerScript.Instance.ElectricityIsOn)
+            {
+                DialogueManagerScript.Instance.ShowDialogue("The fabricator requires electricity!");
+                yield break;
+            }
             if (PlayerScript.Instance.HasInInventory(CostCalculator.GetItemCosts(ItemType.Pickaxe)))
             {
                 PlayerScript.Instance.RemoveFromInventory(CostCalculator.GetItemCosts(ItemType.Pickaxe));
