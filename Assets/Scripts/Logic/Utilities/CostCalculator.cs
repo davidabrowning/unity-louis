@@ -34,9 +34,9 @@ namespace FarmerDemo
                 case ItemType.Fabricator:
                     return new() { new ResourceAmount(ItemType.Twig, 1), new ResourceAmount(ItemType.Stone, 1) };
                 case ItemType.Lab:
-                    return new() { new ResourceAmount(ItemType.Stone, 3) };
+                    return new() { new ResourceAmount(ItemType.Stone, 2) };
                 case ItemType.WoodBurner:
-                    return new() { new ResourceAmount(ItemType.Stone, 50) };
+                    return new() { new ResourceAmount(ItemType.Stone, 3) };
                 case ItemType.CircuitMaker:
                     return new() { new ResourceAmount(ItemType.Berry, 1), new ResourceAmount(ItemType.Iron, 8) };
                 case ItemType.AutoHarvester:

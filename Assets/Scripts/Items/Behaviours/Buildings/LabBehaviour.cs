@@ -51,6 +51,11 @@ namespace FarmerDemo
         {
             if (EraManagerScript.Instance.CurrentEra == EraType.ScientificAdvancement)
                 yield break;
+            if (!PlayerScript.Instance.ElectricityIsOn)
+            {
+                DialogueManagerScript.Instance.ShowDialogue("The lab requires electricity!");
+                yield break;
+            }
             if (!PlayerScript.Instance.HasInInventory(CostCalculator.StandardResearch()))
             {
                 DialogueManagerScript.Instance.ShowDialogue("We don't have any units of " + CostCalculator.StandardResearch().ItemType.ToString().ToLower() + ".");

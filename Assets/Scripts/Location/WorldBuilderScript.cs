@@ -10,16 +10,24 @@ namespace FarmerDemo
         }
         public void BuildInitialWorld()
         {
-            RegionBuilderScript.Instance.BuildRegion(new Vector2Int(0, 0), RegionTypeEnum.Dirt);
-            RegionBuilderScript.Instance.BuildRegion(new Vector2Int(1, 0), RegionTypeEnum.Water);
-            RegionBuilderScript.Instance.BuildRegion(new Vector2Int(0, 1), RegionTypeEnum.Bush);
-            RegionBuilderScript.Instance.BuildRegion(new Vector2Int(1, 1), RegionTypeEnum.Bush);
             for (int x = -5; x < 5; x++)
             {
                 for (int y = -5; y < 5; y++)
                 {
-                    if (x < 0 || x > 1 || y < 0 || y > 1)
+                    if (x == 0 && y == 0)
+                    {
                         RegionBuilderScript.Instance.BuildRegion(new Vector2Int(x, y), RegionTypeEnum.Bush);
+                    }
+                    else
+                    {
+                        int choice = Random.Range(1, 10);
+                        if (choice < 5)
+                            RegionBuilderScript.Instance.BuildRegion(new Vector2Int(x, y), RegionTypeEnum.Water);
+                        else if (choice < 9)
+                            RegionBuilderScript.Instance.BuildRegion(new Vector2Int(x, y), RegionTypeEnum.Dirt);
+                        else
+                            RegionBuilderScript.Instance.BuildRegion(new Vector2Int(x, y), RegionTypeEnum.Bush);
+                    }
                 }
             }
         }

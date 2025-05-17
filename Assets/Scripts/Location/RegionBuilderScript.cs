@@ -10,7 +10,7 @@ namespace FarmerDemo
         public ItemData SquirrelData;
         public ItemData StoneDepositData;
         public ItemData IronDepositData;
-        private int _regionSize = 10;
+        private int _regionSize = 20;
 
         public void BuildRegion(Vector2Int regionCoords, RegionTypeEnum regionType)
         {

@@ -65,15 +65,15 @@ namespace FarmerDemo
                         .FirstOrDefault()
                         .SetActive(true);
                     _buildButtons
+                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.WoodBurner)
+                        .FirstOrDefault()
+                        .SetActive(true);
+                    _buildButtons
                         .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.Fabricator)
                         .FirstOrDefault()
                         .SetActive(true);
                     break;
                 case EraType.Power:
-                    _buildButtons
-                        .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.WoodBurner)
-                        .FirstOrDefault()
-                        .SetActive(true);
                     _buildButtons
                         .Where(bb => bb.GetComponent<BuildMenuIconScript>().BuildingData.ItemType == ItemType.CircuitMaker)
                         .FirstOrDefault()
